@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>🎄 Carl's Cryptic Code Cracker 🎄</h1>
+    <p>Each question will have a code which needs to be decrypted with a cryptic clue to help you figure out the type of encryption. All answers are of common household items and objects. So you can't just try and guess answers, there is also a 4-letter code that needs to be decoded and will be needed to move onto the next question.</p>
+    <p>When submitting an answer it should be formatted like this: OVEN - JKAW</p>
+
+    <!-- Question 1 -->
+    <div class="question" id="q1">
+      <p>1. To find your way, retrace your steps, make sure to do it in reverse to move on to the next.</p>
+      <p>GLZHGVI - SELY</p>
+      <input type="text" id="answer1">
+      <button onclick="submitAnswer(1, 'TOASTER - HVOB')">Submit</button>
+    </div>
+
+    <!-- Question 2 (initially hidden) -->
+    <div class="question hidden" id="q2">
+      <p>2. "A B C, It's easy as<br>
+      1 2 3, as simple as<br>
+      do re mi, A B C, 1 2 3<br>
+      baby you and me girl"</p>
+      <p>2 – 1 – 19 – 11 – 5 – 20</p>       
+      <p>4 – 23 – 14 – 6</p>
+      <input type="text" id="answer2">
+      <button onclick="submitAnswer(2, 'BASKET - DWNF')">Submit</button>
+    </div>
+
+    <!-- Question 3 (initially hidden) -->
+    <div class="question hidden" id="q3">
+      <p>3. I will have the last laugh if you don’t get these letters. Make me a hot drink, whilst I annoyingly wave, because I am getting better.</p>
+      <p>creamspaghettigarlicburgerburritostewtortillakievpineapple</p>
+      <p>milkshakecelerykiwibacon</p>
+      <input type="text" id="answer3">
+      <button onclick="submitAnswer(3, 'MICROWAVE - EYIN')">Submit</button>
+    </div>
+
+    <!-- Question 4 (initially hidden) -->
+    <div class="question hidden" id="q4">
+      <p>4. Work your way through the elements of this clue, get the code and the next question will be bestowed upon you.</p>
+      <p>H+HE // P // NE+LI // O+BA-CD // SC // F+AU-ER // B // N+BI-HF</p>
+      <p>FE // AR // SC // C</p>
+      <input type="text" id="answer4">
+      <button onclick="submitAnswer(4, 'COMPUTER - ZRUF')">Submit</button>
+    </div>
+
+    <!-- Question 5 (initially hidden) -->
+    <div class="question hidden" id="q5">
+      <p>5. Five letters beginning with V, all that is left will make you warm with glee.</p>
+      <p>ALACTRECHAUTAR - ROXE</p>
+      <input type="text" id="answer5">
+      <button onclick="submitAnswer(5, 'ELECTRICHEATER - RUXI')">Submit</button>
+    </div>
+
+    <!-- Question 6 (initially hidden) -->
+    <div class="question hidden" id="q6">
+      <p>6. You will figure out the key to this clue if you let it press on your mind, if successful, question 7 you will find.</p>
+      <p>MHLPBKLPCD - ASUO</p>
+      <input type="text" id="answer6">
+      <button onclick="submitAnswer(6, 'DISHWASHER - QLXG')">Submit</button>
+    </div>
+
+    <!-- Question 7 (initially hidden) -->
+    <div class="question hidden" id="q7">
+      <p>7. To solve this clue, I wouldn’t want to be you. Try phoning a friend and it will be presented to you.</p>
+      <p>8668427874 - 6398</p>
+      <input type="text" id="answer7">
+      <button onclick="submitAnswer(7, 'TOOTHBRUSH - NEXT')">Submit</button>
+    </div>
+
+    <!-- Question 8 (initially hidden) -->
+    <div class="question hidden" id="q8">
+      <p>8. To move on you will need to break this next puzzle. All those colours lined up in queues, it might be frustrating, just don’t get the blues.</p>
+      <p>red-yellow<br>
+      red-green-red-yellow-red-blue-red-black<br>
+      red-pink-red-pink-red-brown-red<br>
+      red-yellow-red-green-red-yellow-red<br>
+      red-green-red<br>
+      red-blue-red-yellow-red-brown-red-green<br>
+      red-black-red-green-red-green-red-brown-red-green</p>
+      <input type="text" id="answer8">
+      <button onclick="submitAnswer(8, 'CUTLERY - HQLV')">Submit</button>
+    </div>
+
+    <!-- Question 9 (initially hidden) -->
+    <div class="question hidden" id="q9">
+      <p>9. Two groups of the alphabet not as they should be. One is U and one is C, if it’s U you shift 2, if it’s C you jump 3.</p>
+      <p>SONZNEXU - KIOQ</p>
+      <input type="text" id="answer9">
+      <button onclick="submitAnswer(9, 'WARDROBE - NAET')">Submit</button>
+    </div>
+
+    <!-- Question 10 (initially hidden) -->
+    <div class="question hidden" id="q10">
+      <p>10. Don't get annoyed, take two deep breaths, forwards and backwards, and you will complete this test.</p>
+      <p>VCZNC - AQFC</p>
+      <input type="text" id="answer10">
+      <button onclick="submitAnswer(10, 'TABLE - CODE')">Submit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
